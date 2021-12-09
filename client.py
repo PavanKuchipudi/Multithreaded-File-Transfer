@@ -26,6 +26,7 @@ def main():
         data = input("> ")
         data = data.split(" ")
         cmd = data[0]
+        
 
         if cmd == "HELP":
             client.send(cmd.encode(FORMAT))
