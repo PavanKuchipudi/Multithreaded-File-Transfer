@@ -38,6 +38,7 @@ def handle_client(conn, addr):
 
             send_data = "OK@File uploaded successfully."
             conn.send(send_data.encode(FORMAT))
+            
         
         elif cmd == "DOWNLOAD":
             name = data[1]
